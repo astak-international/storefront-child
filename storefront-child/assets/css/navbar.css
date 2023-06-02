@@ -16,3 +16,6 @@ navbar.container {
   color: black;
   margin-right: 10px;
 }
+.site-header {
+  margin-bottom: 0 !important;
+}

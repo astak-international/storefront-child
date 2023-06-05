@@ -14,7 +14,8 @@ function astak_enqueue_styles()
     wp_enqueue_style("root", get_stylesheet_directory_uri() . "/assets/css/root.css");
     wp_enqueue_style("tailwind", get_stylesheet_directory_uri() . "/assets/css/tailwind.css");
     wp_enqueue_style("navbar", get_stylesheet_directory_uri() . "/assets/css/navbar.css");
-    wp_enqueue_style("footer", get_stylesheet_directory_uri() . "/assets/css/footer.css");
+    wp_enqueue_style("shop", get_stylesheet_directory_uri() . "/assets/css/shop.css");
+    wp_enqueue_style("reseller", get_stylesheet_directory_uri() . "/assets/css/reseller.css");
 }
 add_action('init', 'astak_enqueue_styles');
 

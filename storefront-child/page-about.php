@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . "/assets/css/root.css" ?>" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . "/assets/css/tailwind.css" ?>" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . "/assets/css/navbar.css" ?>" />
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . "/assets/css/footer.css" ?>" />
   <title>Astak</title>
 </head>
 

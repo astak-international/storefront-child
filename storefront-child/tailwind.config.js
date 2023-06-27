@@ -4,49 +4,17 @@ module.exports = {
   content: ["./**/*.{php, css}"],
   theme: {
     fontFamily: {
-      crimson: ["Crimson Text"],
-      karla: ["karla"],
+      primary: ["Crimson Text"],
+      secondary: ["Montserrat"],
     },
     extend: {
       colors: {
-        // DEFAULT COLORS ON THE LOGO
-        // 'blue-light': "#1b2b43",
-        // 'blue': "#172539",
-        // 'blue-dark': "#0a101a",
-        // 'yellow': "#f3dc83",
-        // 'yellow-dark': "#ab7734",
-
-        // COLOR COMBO #1
-        // 'blue': '#ECF2FF',
-        // 'purple': '#E3DFFD',
-        // 'purple-dark': '#D5D1FA',
-        // 'yellow': '#FFF4D2',
-
-        // COLOR COMBO #2
-        // 'blue': '#ECF9FF',
-        // 'purple': '#FFFBEB',
-        // 'purple-dark': '#FFE7CC',
-        // 'yellow': '#F8CBA6',
-
-        // COLOR COMBO #3
         "blue-darker": "#1b2b43",
         "blue-dark": "#0081C9",
         blue: "#5BC0F8",
         "blue-light": "#86E5FF",
         "blue-lighter": "#f0faff",
         yellow: "#FFC93C",
-
-        // COLOR COMBO #4
-        // 'blue': '#ADA2FF',
-        // 'purple': '#C0DEFF',
-        // 'purple-dark': '#FFE5F1',
-        // 'yellow': '#FFF8E1',
-
-        // COLOR COMBO #5
-        // 'blue-dark': '#7FBCD1',
-        // 'blue': '#A5F1E9',
-        // 'blue-light': '#E1FFEE',
-        // 'yellow': '#FFEEAF',
       },
     },
     borderWidth: {

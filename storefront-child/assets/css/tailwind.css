@@ -750,6 +750,14 @@ html {
   bottom: -8rem !important;
 }
 
+.-left-2 {
+  left: -0.5rem !important;
+}
+
+.-top-2 {
+  top: -0.5rem !important;
+}
+
 .bottom-32 {
   bottom: 8rem !important;
 }
@@ -779,10 +787,6 @@ html {
   margin-bottom: 4rem !important;
 }
 
-.mt-32 {
-  margin-top: 8rem !important;
-}
-
 .mt-5 {
   margin-top: 1.25rem !important;
 }
@@ -791,12 +795,16 @@ html {
   margin-top: 2rem !important;
 }
 
-.mt-16 {
-  margin-top: 4rem !important;
-}
-
 .flex {
   display: flex !important;
+}
+
+.h-4 {
+  height: 1rem !important;
+}
+
+.w-4 {
+  width: 1rem !important;
 }
 
 .max-w-2xl {
@@ -828,16 +836,20 @@ html {
   align-items: center !important;
 }
 
+.justify-center {
+  justify-content: center !important;
+}
+
 .justify-between {
   justify-content: space-between !important;
 }
 
-.gap-16 {
-  gap: 4rem !important;
-}
-
 .gap-4 {
   gap: 1rem !important;
+}
+
+.rounded-full {
+  border-radius: 9999px !important;
 }
 
 .border-10 {
@@ -874,6 +886,11 @@ html {
   padding-right: 2rem !important;
 }
 
+.py-24 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
 .py-3 {
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
@@ -882,21 +899,6 @@ html {
 .py-32 {
   padding-top: 8rem !important;
   padding-bottom: 8rem !important;
-}
-
-.py-48 {
-  padding-top: 12rem !important;
-  padding-bottom: 12rem !important;
-}
-
-.py-12 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
-.py-24 {
-  padding-top: 6rem !important;
-  padding-bottom: 6rem !important;
 }
 
 .pb-64 {
@@ -915,12 +917,8 @@ html {
   text-align: center !important;
 }
 
-.font-crimson {
+.font-primary {
   font-family: Crimson Text !important;
-}
-
-.font-karla {
-  font-family: karla !important;
 }
 
 .text-8xl {
@@ -972,38 +970,4 @@ html {
 
 .woocommerce-info {
   background-color: #0081C9 !important;
-}
-
-.col-full {
-  max-width: 1536px !important;
-}
-
-@media screen and (max-width: 1536px) {
-  .col-full {
-    max-width: 1280px !important;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  .col-full {
-    max-width: 1024px !important;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .col-full {
-    max-width: 768px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .col-full {
-    max-width: 640px !important;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .col-full {
-    max-width: 100% !important;
-  }
 }

@@ -1,11 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.woocommerce-info {
-  background-color: theme("colors.blue-dark") !important;
-}
-
 .col-full {
   max-width: theme("screens.2xl") !important;
 }

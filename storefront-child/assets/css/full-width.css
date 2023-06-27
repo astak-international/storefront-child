@@ -1,0 +1,33 @@
+.col-full {
+  max-width: 1536px !important;
+}
+
+@media screen and (max-width: 1536px) {
+  .col-full {
+    max-width: 1280px !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .col-full {
+    max-width: 1024px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .col-full {
+    max-width: 768px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col-full {
+    max-width: 640px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .col-full {
+    max-width: 100% !important;
+  }
+}

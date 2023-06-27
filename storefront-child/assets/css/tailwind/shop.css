@@ -1,6 +1,6 @@
 .wc-block-price-filter__range-input-progress,
 .wc-block-components-price-slider__range-input-progress {
-  --range-color: #1b2b43 !important;
+  --range-color: theme("colors.blue-darker") !important;
 }
 
 .onsale,
@@ -42,10 +42,10 @@
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
-  font-family: Montserrat !important;
+  font-family: theme("fontFamily.secondary") !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  font-size: 1.125rem !important;
+  font-size: theme("fontSize.lg") !important;
 }
 
 .wc-block-price-filter__amount--max,
@@ -54,8 +54,8 @@
 }
 
 .orderby {
-  background: #f0faff;
-  font-family: Montserrat;
+  background: theme("colors.blue-lighter");
+  font-family: theme("fontFamily.secondary");
   background-position: -80px center;
   width: auto;
 }
@@ -74,16 +74,16 @@
 
 .add_to_cart_button,
 .ajax_add_to_cart {
-  background: #f0faff !important;
-  color: #1b2b43 !important;
+  background: theme("colors.blue-lighter") !important;
+  color: theme("colors.blue-darker") !important;
 }
 
 .woocommerce-pagination .page-numbers {
-  background-color: #f0faff;
-  color: #1b2b43 !important;
+  background-color: theme("colors.blue-lighter");
+  color: theme("colors.blue-darker") !important;
 }
 
 .woocommerce-pagination .page-numbers.current {
-  background-color: #1b2b43 !important;
+  background-color: theme("colors.blue-darker") !important;
   color: white !important;
 }

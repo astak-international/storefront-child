@@ -19,7 +19,7 @@
       class="py-32">
       <div class="container mx-auto flex justify-between">
         <div class="fadeIn">
-          <h1 class="font-crimson text-9xl text-white">
+          <h1 class="font-primary text-9xl text-white">
             Astak
             <br />
             Incense &<br />
@@ -42,7 +42,7 @@
   </section>
   <section>
     <div class="container mx-auto text-center py-32">
-      <h2 class="font-crimson text-blue-darker text-8xl">
+      <h2 class="font-primary text-blue-darker text-8xl">
         About Our
         <br /> Singing Bowls
       </h2>
@@ -69,7 +69,7 @@
           src="<?php echo get_stylesheet_directory_uri() . "/assets/images/happy.jpg" ?>" alt="happy-image" />
       </div>
       <div class="max-w-[42rem]">
-        <h2 class="font-crimson text-8xl text-blue-darker">
+        <h2 class="font-primary text-8xl text-blue-darker">
           View Our Gallery
         </h2>
         <p class="text-blue-darker mt-5">
@@ -79,7 +79,7 @@
           <br />
           tempus convallis quis ac lectus.
         </p>
-        <button class="mt-8 bg-blue-darker text-white uppercase font-crimson text-xl tracking-very-wide px-8 py-3">View
+        <button class="mt-8 bg-blue-darker text-white uppercase font-primary text-xl tracking-very-wide px-8 py-3">View
           Gallery</button>
         <div class="absolute right-0 bottom-32 z-0">
           <Wave />
@@ -91,7 +91,7 @@
   </section>
   <section>
     <div class="container mx-auto text-center py-32">
-      <h2 class="font-crimson text-blue-darker text-8xl">
+      <h2 class="font-primary text-blue-darker text-8xl">
         Shop For
         <br /> Singing Bowls
       </h2>
@@ -105,7 +105,7 @@
         tenetur distinctio alias quia?
       </div>
       <button
-        class="mt-8 mb-16  bg-blue-darker text-white uppercase font-crimson text-xl tracking-very-wide px-8 py-3">Try it
+        class="mt-8 mb-16  bg-blue-darker text-white uppercase font-primary text-xl tracking-very-wide px-8 py-3">Try it
         out</button>
       <img style="filter: drop-shadow(0px 4px 2px #1b2b43) drop-shadow(0px 0px 10px lightgray)"
         src="<?php echo get_stylesheet_directory_uri() . '/assets/images/bowl-136.png' ?>" alt="bowls" />

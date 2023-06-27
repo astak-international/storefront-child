@@ -19,6 +19,14 @@ function astak_enqueue_styles()
 }
 add_action('init', 'astak_enqueue_styles');
 
+function astak_optional_styles()
+{
+    if (!is_product() && !is_cart() && !is_checkout()) {
+        wp_enqueue_style("full-width", get_stylesheet_directory_uri() . "/assets/css/full-width.css");
+    }
+}
+add_action('wp_print_styles', 'astak_optional_styles');
+
 
 function remove_storefront_page_header()
 {
@@ -56,7 +64,17 @@ function bbloomer_remove_storefront_sidebar()
 function add_video_before_main_content()
 {
     if (is_shop()) {
-        echo '<div style="height:600px;"><video style="position:absolute; left:0; top:0; max-width:100vw; width:100vw; height:600px; object-fit:cover;  filter:brightness(50%)" playsInline autoPlay muted loop src="' . get_stylesheet_directory_uri() . '/assets/videos/singing.mp4"></video><div style="display:flex; flex-direction:column; align-items:center; position:absolute; z-index:50; left:50%; top:300px; transform:translate(-50%, -50%)"><h1 style="margin: 0" class="text-8xl font-crimson text-white">Astak International</h1><h3 class="text-white">Crafting Culture</h3></div></div>';
+        echo '<div style="height:440px;"><video style="position:absolute; left:0; top:0; max-width:100vw; width:100vw; height:440px; object-fit:cover;  filter:brightness(50%)" playsInline autoPlay muted loop src="' . get_stylesheet_directory_uri() . '/assets/videos/singing.mp4"></video><div style="display:flex; flex-direction:column; align-items:center; position:absolute; z-index:50; left:50%; top:240px; transform:translate(-50%, -50%)"><h1 style="margin: 0" class="text-8xl font-primary text-white">Astak International</h1><h3 class="text-white">CRAFTING CULTURE</h3></div></div>';
     }
 }
 add_action('woocommerce_before_main_content', 'add_video_before_main_content');
+
+
+
+// update cart count woocommerce
+function astak_add_to_cart_fragment($fragments)
+{
+    $fragments['.astak-cart-count'] = '<a href="' . wc_get_cart_url() . '" class="astak-cart-count">' . WC()->cart->get_cart_contents_count() . '</a>';
+    return $fragments;
+}
+add_filter('woocommerce_add_to_cart_fragments', 'astak_add_to_cart_fragment');

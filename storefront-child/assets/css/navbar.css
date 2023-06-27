@@ -11,11 +11,15 @@ navbar.container {
   display: inline-block;
 }
 .menu li a {
-  font-family: "karla" !important;
+  font-family: var(--font-secondary);
   text-decoration: none;
   color: black;
   margin-right: 10px;
 }
 .site-header {
   margin-bottom: 0 !important;
+}
+
+.astak-cart-count {
+  color: white !important;
 }

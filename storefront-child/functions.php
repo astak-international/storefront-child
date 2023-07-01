@@ -16,8 +16,18 @@ function astak_enqueue_styles()
     wp_enqueue_style("navbar", get_stylesheet_directory_uri() . "/assets/css/navbar.css");
     wp_enqueue_style("shop", get_stylesheet_directory_uri() . "/assets/css/shop.css");
     wp_enqueue_style("reseller", get_stylesheet_directory_uri() . "/assets/css/reseller.css");
+
+    if (!is_product()) {
+        wp_enqueue_style("breadcrumbs", get_stylesheet_directory_uri() . "/assets/css/remove-breadcrumb.css");
+    }
 }
 add_action('init', 'astak_enqueue_styles');
+
+function astak_enqueue_scripts()
+{
+    wp_enqueue_script("navbar", get_stylesheet_directory_uri() . "/assets/js/navbar.js");
+}
+add_action('init', 'astak_enqueue_scripts');
 
 function astak_optional_styles()
 {
@@ -78,3 +88,16 @@ function astak_add_to_cart_fragment($fragments)
     return $fragments;
 }
 add_filter('woocommerce_add_to_cart_fragments', 'astak_add_to_cart_fragment');
+
+
+add_filter('woocommerce_currency_symbol', 'add_cw_currency_symbol', 10, 2);
+function add_cw_currency_symbol($custom_currency_symbol, $custom_currency)
+{
+    error_log($custom_currency);
+    switch ($custom_currency) {
+        case 'NPR':
+            $custom_currency_symbol = 'Rs';
+            break;
+    }
+    return $custom_currency_symbol;
+}

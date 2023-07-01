@@ -1,0 +1,4 @@
+.storefront-breadcrumb,
+.woocommerce-breadcrumb {
+  display: none !important;
+}

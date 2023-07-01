@@ -45,7 +45,6 @@
   font-family: Montserrat !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  font-size: 1.125rem !important;
 }
 
 .wc-block-price-filter__amount--max,
@@ -87,3 +86,48 @@
   background-color: #1b2b43 !important;
   color: white !important;
 }
+
+.wp-block-search__label {
+  display: none;
+}
+
+.wp-block-search__input {
+  background: white !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: Montserrat !important;
+  color: #1b2b43 !important;
+}
+
+.wp-block-search__input::-moz-placeholder {
+  color: #1b2b43 !important;
+  font-family: Montserrat !important;
+}
+
+.wp-block-search__input::placeholder {
+  color: #1b2b43 !important;
+  font-family: Montserrat !important;
+}
+
+.wp-block-search__button {
+  border: none !important;
+  outline: none !important;
+  background: #1b2b43 !important;
+  color: white !important;
+}
+
+.astak-cart-count {
+  font-size: 0.75rem !important;
+  font-family: Montserrat !important;
+}
+
+/* CART */
+
+.checkout-button {
+  background-color: #1b2b43 !important;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+/* CHECKOUT */

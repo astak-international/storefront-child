@@ -45,7 +45,6 @@
   font-family: theme("fontFamily.secondary") !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  font-size: theme("fontSize.lg") !important;
 }
 
 .wc-block-price-filter__amount--max,
@@ -87,3 +86,42 @@
   background-color: theme("colors.blue-darker") !important;
   color: white !important;
 }
+
+.wp-block-search__label {
+  display: none;
+}
+
+.wp-block-search__input {
+  background: white !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: theme("fontFamily.secondary") !important;
+  color: theme("colors.blue-darker") !important;
+}
+
+.wp-block-search__input::placeholder {
+  color: theme("colors.blue-darker") !important;
+  font-family: theme("fontFamily.secondary") !important;
+}
+
+.wp-block-search__button {
+  border: none !important;
+  outline: none !important;
+  background: theme("colors.blue-darker") !important;
+  color: white !important;
+}
+
+.astak-cart-count {
+  font-size: theme("fontSize.xs") !important;
+  font-family: theme("fontFamily.secondary") !important;
+}
+
+/* CART */
+.checkout-button {
+  background-color: theme("colors.blue-darker") !important;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+/* CHECKOUT */

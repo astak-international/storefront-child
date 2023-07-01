@@ -23,3 +23,13 @@ navbar.container {
 .astak-cart-count {
   color: white !important;
 }
+
+.page,
+.hfeed-site,
+.site {
+  overflow-x: visible !important;
+}
+
+#astak-navbar-search-wrapper {
+  cursor: pointer;
+}
